@@ -1,7 +1,12 @@
 from excepciones import ReservaError
-
 class Reserva:
     def __init__(self, cliente, servicio, duracion):
+        if cliente is None:
+            raise ReservaError("Cliente no válido")
+
+        if servicio is None:
+            raise ReservaError("Servicio no válido")
+
         if duracion <= 0:
             raise ReservaError("Duración inválida")
 
@@ -18,3 +23,6 @@ class Reserva:
 
     def calcular_total(self):
         return self.servicio.calcular_costo(self.duracion)
+
+    def mostrar_info(self):
+        return f"Cliente: {self.cliente.get_nombre()} | Estado: {self.estado}"
