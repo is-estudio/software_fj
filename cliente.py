@@ -1,7 +1,6 @@
 from abc import ABC
 from excepciones import ClienteError
 
-
 class Persona(ABC):
 
     def __init__(self, nombre):
@@ -11,7 +10,6 @@ class Persona(ABC):
 class Cliente(Persona):
 
     def __init__(self, nombre, correo, telefono):
-
         super().__init__(nombre)
 
         self.__correo = None
@@ -45,9 +43,4 @@ class Cliente(Persona):
         self.__telefono = valor
 
     def mostrar(self):
-
-        return (
-            f"{self.nombre} - "
-            f"{self.__correo} - "
-            f"{self.__telefono}"
-        )
+        return f"{self.nombre} - {self.__correo}"

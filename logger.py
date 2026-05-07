@@ -6,3 +6,4 @@ class Logger:
     def registrar(mensaje):
         with open("logs.txt", "a", encoding="utf-8") as archivo:
             archivo.write(f"[{datetime.now()}] {mensaje}\n")
+

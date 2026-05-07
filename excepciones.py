@@ -1,5 +1,4 @@
 class ErrorSistema(Exception):
-    """Clase base para excepciones del sistema"""
     pass
 
 
@@ -13,3 +12,4 @@ class ServicioError(ErrorSistema):
 
 class ReservaError(ErrorSistema):
     pass
+

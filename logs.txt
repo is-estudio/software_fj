@@ -60,3 +60,6 @@
 [2026-05-07 14:50:09.091764] Reserva creada: Elkin
 [2026-05-07 15:14:46.862018] Debe registrar clientes
 [2026-05-07 15:14:48.693681] Debe registrar clientes
+[2026-05-07 15:59:54.859583] Correo inválido
+[2026-05-07 16:00:02.555643] Debe registrar clientes
+[2026-05-07 16:00:20.763620] Cliente registrado: Elkin
